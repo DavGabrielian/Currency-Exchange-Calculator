@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body style="padding: 40px; 
+              margin: 20px;">
+              
+    <h1>Currency Exchange</h1>
+
+    <form>
+      <input  style="width: auto;" type="number" class="form-control" id="amount" />
+      <div class="form-group mx-sm-3 mb-2"></div>
+      <select style="width: auto;" class="form-control" id="currency-1" required>
+        <option>USD</option>
+        <option>AMD</option>
+      </select>
+      </div>
+      <div class="form-group mx-sm-3 mb-2"></div>
+      <label>convert to</label>
+      <select style="width: auto;" class="form-control" id="currency-2" required>
+        <option>AMD</option>
+        <option>USD</option>
+      </select>
+      </div>
+      <br>
+      <button class="btn calculate-btn btn-outline-secondary">Convert</button>
+    </form>
+    <div class="result">
+      <p>
+        <span class="given-amount"></span>
+        <span class="first-currency"></span>
+        <span class="final-result"></span>
+        <span class="second-currency"></span>
+      </p>
+    </div>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
